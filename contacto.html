@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | ChillChaos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff; 
+            color: #000000; 
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 25px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: 900;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: opacity 0.3s;
+            text-transform: uppercase;
+        }
+
+        header nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* --- CONTEÚDO DE CONTACTO --- */
+        .main-contact {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 5%;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-title {
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .contact-desc {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 50px;
+            max-width: 600px;
+        }
+
+        .contact-box {
+            width: 100%;
+            max-width: 500px;
+            border: 2px solid #000000;
+            padding: 40px;
+            background: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .contact-label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: #aaaaaa;
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000000;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 30px;
+            word-wrap: break-word;
+        }
+
+        /* Botão do WhatsApp */
+        .btn-whatsapp {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background-color: #000000;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 16px;
+            border: 1px solid #000000;
+            transition: all 0.3s ease;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #000000;
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">CHILLCHAOS</a>
+        <nav>
+            <a href="index.html#shop">Shop</a>
+            <a href="index.html#about">About</a>
+            <a href="contacto.html" style="border-bottom: 2px solid #ffffff; padding-bottom: 4px;">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main-contact">
+        <h1 class="contact-title">Contact Us</h1>
+        <p class="contact-desc">Tens alguma dúvida sobre os nossos produtos ou encomendas? Entra em contacto direto connosco através dos canais abaixo.</p>
+
+        <div class="contact-box">
+            <div class="contact-label">E-mail Oficial</div>
+            <a href="mailto:caiybranc02012@gmail.com" class="contact-info">caiybranc02012@gmail.com</a>
+
+            <div class="contact-label">Telefone / WhatsApp</div>
+            <div class="contact-info" style="margin-bottom: 40px;">+258 855847533</div>
+            
+            <a href="https://wa.me/258855847533?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20chapéus%20da%20ChillChaos!" target="_blank" class="btn-whatsapp">
+                Falar no WhatsApp
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 CHILLCHAOS STUDIO. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
